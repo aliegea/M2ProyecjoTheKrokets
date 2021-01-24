@@ -1,0 +1,267 @@
+body {
+    width: 1000px;
+    height: 1000px;
+    margin:  20px auto 0 auto; 
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    position: relative;
+   
+    
+}
+h1{
+    font-size: 22px;
+    display: inline-block;
+    font-family: 'Lora', serif;
+    color:#383734;
+    margin-top: 50px;
+    margin-left: 30px;
+    background-color: white;
+    
+}
+h2
+{font-size: 20px;
+display: inline-block;
+text-align: center;
+font-family: 'Lora', serif;
+color:#4b3e40;
+
+}
+
+
+
+.cabecera{
+    width: 997px;
+    height: 117px;
+    margin-bottom: 20px; 
+    border:1px dotted  #e1ba38  ; 
+
+}
+.cabecera::before {
+    content: "";/*content obligatorio en ::before*/
+    background-image: url("images/header.png");
+    background-repeat:repeat-x;/*repeticion de la imagen de fondo en horizontal*/
+   opacity: 0.3;/*transparencia de la imagen de fondo*/
+    top: -20px;
+    left: 0;
+    bottom: 0;/*Sin añadir los margen=0 no se ve la imagen(!)*/
+    right: 0;
+    width: 1000px;
+    height: 120px;
+    margin:  25px auto 20px auto; 
+    position: absolute;/* para que quede la imagen dentro de la cabecera*/
+    z-index: -1;/*Imagen de fondo por detrás de los otros elementos:H1,logo e iconos*/
+
+
+} 
+
+.logo{
+    width: 180px;/*el espacio del logo y de los iconos tiene que se igual para centrar el título  y la imagen de fondo*/
+    height: 60px;
+    float: left;/*posicion del logo a la izquierda del header*/ 
+    padding: 30px 0px 20px 0;
+   
+    
+
+   
+}
+.logo img {
+    width:200px ;
+    height:60px ;
+    margin:0;
+    padding: 0 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+.titulo{
+    position: absolute;
+    display: inline-block;/*para que entre en la caja y se centre entre el logo y los iconos que estan flotando a izquierda y derecha*/
+    color: olive; 
+    line-height: 2px;
+    font-family: 'Lora', serif;
+   padding-left: 20px;
+    background-color: white;
+
+}
+.iconos{
+   width:140px;
+    height:40px;
+    float: right;
+    margin-top: 30px;
+    background-color: white;
+    padding-bottom: 8px;
+    border-radius: 30px;
+
+/*para tapar la imagen de fondo proque si no queda sucio y los iconos no destacan*/
+}
+.iconos a{
+  color: #4b3e40; /* Color de los iconos */
+  margin: 0px 4px; /* Espacio entre los iconos */
+  font-size: 40px; /* Tamaño de los iconos */
+  float: right;
+}
+.iconos a:hover {
+    color:#d09736 ; /* Color de los iconos al pasar el ratón */
+  }
+.menuk{
+    width: 1000px;
+    height: 45px;/*amplada del div que conté el menú*/
+    margin-bottom: 20px;
+    
+}
+.menuk a{
+    background-color:#e1ba38 ;
+    
+    padding: 12px 66.5px;
+    display: inline-block;
+    text-decoration: none; 
+    color: white; 
+    border-radius: 16px;  
+    border:3px solid #e1ba38;
+}
+.menuk a:hover{
+    background-color:  white ;
+    font-size: 17px;
+    padding: 15px 63.5px;
+    border:3px solid #e1ba38;
+    color: #e1ba38;
+}
+.mediumcontainer{
+    width: 1000px;
+    text-align: center;
+    height: 190px;
+    margin:25px 0 25px 0;
+    position:absolute
+    top:235px;
+} 
+.uno{
+     
+     width: 324px;
+     height: 190px;
+border-radius: 18px;
+     float: right;
+     text-align: center;
+     
+}
+.dos{
+   
+     width:324px ;
+     height: 190px;
+     display: inline-block;
+     text-align: center;
+     font-size: 30px;
+     font-weight: bold;
+     color: #4d928a;
+     text-align: center;
+     margin-top: 0;
+     overflow: scroll;
+     
+     
+}
+
+    
+.tres{
+    
+     width: 324px;
+     height: 190px;
+     border-radius: 18px;
+     float: left;
+     width: 32.6%;
+     height: 190px;
+     padding-top: 20px;
+}
+.dos h4{
+   padding:0 30px;
+   margin-block-end: 0.5em;
+}
+.dos p{
+    font-size: 16px;
+    color:#4b3e40; ;
+   
+    margin-top: 0;
+   
+
+}
+.botonquiero {
+
+        background: #217c61;
+        border:5px solid #18ac93;
+        background-image: linear-gradient(top,#217c61 #18ac93);
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 21px;
+        padding: 30px;
+        margin-top: 50px;
+        border:2px solid #217c61;
+        border-radius: 40px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+     }
+     
+     .botonquiero:hover {
+        background: white;
+        color: #217c61;
+        text-decoration: none;
+        border:5px solid #217c61;
+       
+
+     }
+
+
+.recetas{
+     width: 1000px;
+     height: 455px;
+    text-align: center;
+     margin-top: 20px;
+     
+   
+     padding:5px;
+     background-image: url(images/recetas.png);
+     border-radius: 18px;
+     
+    
+}
+  
+
+.recetaMes {
+     width: 600px;
+     height: 450px;
+     
+    display: inline;
+     
+}
+
+.kokkore{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color:#ffffff;
+    background-color:#4b3e40 ;
+    border: 2px solid #4b3e40 ;
+    padding:10px;
+    border-radius: 8px;
+   
+}
+.kokkore:hover{
+    color:#217c61;
+    background-color:white ;
+    border: 2px solid #217c61 ;
+}
+.pie{
+    width: 1000px;
+    height: 70px; 
+    position: absolute;
+    bottom:20px;
+    background-color:#d09736; ; 
+    border-radius: 8px;
+
+    text-align: center;
+    
+}
+
+.textoFooter{
+color: #bcb686; 
+ font-size: 14px;  
+margin-top: -5px;
+}
